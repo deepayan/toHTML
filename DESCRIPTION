@@ -1,0 +1,10 @@
+Package: toHTML
+Version: 0.1-1
+Date: 2023/10/18
+Title: HTML export for common R objects
+Maintainer: Deepayan Sarkar <deepayan.sarkar@gmail.com>
+Author: Deepayan Sarkar
+Description: Methods for the toHTML generic function
+Depends: R (>= 4.2.0), tools
+Imports: tools
+License: GPL3

@@ -1,0 +1,11 @@
+
+import(tools)
+
+S3method(toHTML, data.frame)
+S3method(toHTML, matrix)
+
+export(show_html)
+
+### Local variables:
+### mode: R
+### End:
