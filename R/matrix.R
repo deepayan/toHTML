@@ -68,12 +68,12 @@ matrix2html_table <-
     function(x,
              datatable = TRUE,
              id = "rtable",
-             dtopts = "{ 'paging': false, scrollY : '70vh', scrollX : true, }")
+             dtopts = "{ 'paging': false, scrollY : '70vh', scrollCollapse: true, scrollX : true, }")
 {
     have_rownames <- !is.null(rownames(x))
     have_colnames <- !is.null(colnames(x))
     if (have_rownames) x <- cbind(rownames(x), x)
-    colnames(x)[[1]] <- ""
+    if (have_colnames) colnames(x)[[1]] <- ""
     out <- NULL
     addLine <- function(...) out <<- c(out, ...)
     addLine(sprintf("<table class='table table-striped table-bordered' id='%s'>", id))
