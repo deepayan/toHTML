@@ -39,7 +39,7 @@ toHTML.matrix <- function(x, ..., standalone = TRUE, use_json = FALSE, datatable
     footer <- "</div></html></body>"
     c(result,
       if (use_json) matrix2html_json(x)
-      else matrix2html_table(x, datatable = datatable),
+      else matrix2html_table(x, datatable = datatable, ...),
       footer)
 }
 
